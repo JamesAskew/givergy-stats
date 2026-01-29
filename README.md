@@ -1,1 +1,0 @@
-# givergy-stats
