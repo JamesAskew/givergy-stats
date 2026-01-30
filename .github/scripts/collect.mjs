@@ -10,7 +10,7 @@ async function run() {
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
   const data = await res.json();
-  const calculated = data.entity[0].totalRaisedAmount;
+  const calculated = data.entity[0].totalRaisedAmount / 100; 
   const timestamp = new Date().toISOString();
   const row = `${timestamp},${calculated}\n`;
 
